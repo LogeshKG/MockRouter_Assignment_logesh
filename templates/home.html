@@ -1,0 +1,31 @@
+{% block main %}
+
+<head>
+  <style>
+  .container {
+    border: 5px outset white;
+    background-color: lightblue;
+    text-align: center;
+  }
+  </style>
+</head>
+<div class="container">
+      <form action="/form-data" method="POST">
+
+        <div class="form-group">
+          <label>Interface Name</label>
+          <input type="text" class="form-control" id="intf_name" name="intf_name" placeholder="Enter an interface name">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+
+      <form action="/form-data" method="POST">
+
+        <button type="submit" value="all" name="intf_name" class="btn btn-primary">Get All Interfaces</button>
+
+      </form>
+</div>
+
+{% endblock %}
